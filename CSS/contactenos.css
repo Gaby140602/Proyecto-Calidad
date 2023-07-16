@@ -31,8 +31,8 @@ section{
 /* elementoA > elementoB: Este selector indica que elementoA es el elemento de referencia y se aplicará a todos los elementoB que sean descendientes directos de elementoA. */
 /* modifica las imagenes de los integrantes del grupo para que se vean limitadas a un tamaño minimo */
 .info_par>img{
-    max-width: 20vw;
-    max-height: 30vh;
+    max-width: 175px;
+    max-height: 250px;
     margin: 2px;
 }
 
