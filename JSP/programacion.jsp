@@ -16,9 +16,9 @@
     String Cedula = request.getParameter("cedula");
     String Fecha = request.getParameter("fecha");
 
-    if (Fecha == null || Fecha.equals("")) {
-        // Asignar un valor predeterminado
-        Fecha = "Ninguna fecha fue seleccionada";
+     if (Nombre == null || Cedula == null || Fecha == null ||  Nombre.isEmpty() || Cedula.isEmpty() || Fecha.isEmpty()) {
+    	out.println("<h1>Error: Los campos de Nombre, Cedula y Fecha no pueden estar vacios.</h1>");
+        out.println("<a href='home.html'>Volver a la pagina de inicio</a>");
     }
 
     Connection dbconnect = null;
