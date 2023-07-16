@@ -27,6 +27,7 @@ a{
 h2{
     font-family: 'Roboto', sans-serif;
     color: white;
+    font-size: 2.5vw;
 }
 
 /* editar los footer de las paginas de manera que n elementos puedan tener 1/n fraccion del display*/
