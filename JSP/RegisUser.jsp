@@ -18,8 +18,8 @@ String apellido = request.getParameter("apellido");
 String edad = request.getParameter("edad");
 String password = request.getParameter("password");
 
-if (nombre == null || apellido == null || edad == null || password == null) {
-    out.println("<h1>Error: Los campos de nombre, apellido y contrase�a no pueden estar vac�os.</h1>");
+if (nombre == null || apellido == null || edad == null || password == null || nombre.isEmpty() || apellido.isEmpty() || edad.isEmpty() || password.isEmpty()) {
+    out.println("<h1>Error: Los campos de nombre, apellido, edad y contrase�a no pueden estar vacios.</h1>");
     out.println("<a href='login.html'>Volver al formulario de inicio de sesi�n</a>");
 } else {
     try {
