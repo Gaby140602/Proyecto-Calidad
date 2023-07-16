@@ -11,9 +11,6 @@ section a{
 .contenedor{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-    margin: 50px;
 }
 
 /* modifica los datos de la noticia para darle una distribucion optima */
@@ -21,18 +18,13 @@ section a{
     background-color: var(--colornews);
     /* ajustes de dentro de la caja */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-    /* ajustes de la caja */
-    margin: 2px 0px 2px 5px;
+    margin: 0.7rem;
     padding: 10px;
+    box-shadow: 0px 0px 5px 0px #203563;/*genera una sobra alrededor del elemento*/
     border-radius: 10px;
-    box-shadow: 0px 0px 5px 0px #56B4BE;
-    width: 20rem;
-    height: auto;
 }
 
 
@@ -42,6 +34,7 @@ section a{
 
 /* Se seleciona los elementos de tipo video que esten dentro de la clase */
 .noticias video{
-    max-width: 20rem;
-    height: auto;
+    max-width: 25vw;
+    max-height: 35vh;
+    margin: 2px
 }
